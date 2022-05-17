@@ -38,3 +38,6 @@ RUN /opt/butler/bin/butler -V
 ENV PATH="/opt/butler/bin:${PATH}"
 
 RUN godot -e -q
+
+RUN mkdir -p /usr/src/game
+WORKDIR /usr/src/game
